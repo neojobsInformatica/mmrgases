@@ -1,0 +1,102 @@
+#entrega::before, #custo::before, #qualidade::before, #atendimento::before, #portfolio::before, #suporte::before{
+    content: '';
+    background-image: url(../imagens/icones/caminhao.svg);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    opacity: 0;
+}
+#entrega::before{
+    animation: caminhao 6s infinite ease-in-out;
+}
+/*----------------------------------------*/
+#custo::before{
+    background-image: url(../imagens/icones/porquinho.svg);
+}
+#custo::before{
+    animation: caminhao 6s infinite ease-in-out;
+}
+/*----------------------------------------*/
+#qualidade::before{
+    background-image: url(../imagens/icones/qualidade.svg);
+}
+#qualidade::before{
+    animation: caminhao 6s infinite ease-in-out;
+    animation-delay: 1s;
+}
+/*----------------------------------------*/
+#atendimento::before{
+    background-image: url(../imagens/icones/atendimento.svg);
+}
+#atendimento::before{
+    animation: caminhao 6s infinite ease-in-out;
+    animation-delay: 1s;
+}
+/*----------------------------------------*/
+#portfolio::before{
+    background-image: url(../imagens/icones/portfolio.svg);
+}
+#portfolio::before{
+    animation: caminhao 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+/*----------------------------------------*/
+#suporte::before{
+    background-image: url(../imagens/icones/suporte.svg);
+}
+#suporte::before{
+    animation: caminhao 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+
+/*ANIMAÇÕES*/
+@keyframes degrade {
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position-x:100%;
+    }
+}
+@keyframes carrossel{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform:translateX(-1100px);
+    }
+}
+@keyframes troca{
+    from{
+        color: rgba(255, 255, 255, 0); 
+    }
+    to{
+        color: rgba(255, 255, 255, 0.596); 
+    }
+}
+@keyframes caminhao {
+    from{
+        transform: translateX(-125px);
+        opacity: 0.8;
+    }
+    to{
+        transform: translateX(120px);
+        opacity: 0.0;
+    }
+}
+/*ANIMAÇÃO NO HOME DO CAMINHÃO*/
+@keyframes movimento{
+    0%{
+        transform: translateX(-70px);
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateX(190px);
+        opacity: 0;
+    }
+}
