@@ -13,6 +13,22 @@
     align-items: center;
 }
 
+/*TITULOS*/
+.logo-sobre h1, .diferencias h1, .produtos h1, .servicos h1, .feedbacks h1, .porque h1, .fale-conosco h1, .parceiros h1{
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: rgb(34, 34, 32);
+    font-weight: 600;
+    border-bottom: 2px solid rgb(1, 110, 89);
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+/*TITULOS WHITE*/
+.logo-sobre h1, .produtos h1, .porque h1, .parceiros h1{
+    color: white;
+    border-bottom: 2px solid rgb(170, 203, 99);
+}
+
 /*SOBRE-NÓS INVISIVEL*/
 #sobre-nos{
     position: fixed;
@@ -41,20 +57,20 @@
     position: absolute;
 }
 .sobre{
-    height: 80%;
-    width: 85%;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
 }
 .video{
-    height: 80%;
-    width: 85%;
+    height: 100%;
+    width: 100%;
     z-index: -1;
     position: absolute;
 }
 .container-sobre{
     justify-content: space-around;
     gap: 50px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.301);
     padding: 40px 20px;
     border-radius: 10px;
@@ -63,17 +79,6 @@
     flex-direction: column;
     padding: 0px 0px 0px 20px;
     text-align: center;
-}
-.logo-sobre h1{
-    letter-spacing: 5px;
-    font-size: 40px;
-    color: white;
-}
-.two-bar{
-    height: 5px;
-    width: 150px;
-    border-radius: 5px;
-    background-color: rgb(3, 155, 124);
 }
 .logo-sobre img{
     height: 150px;
@@ -310,18 +315,6 @@ main{
     flex-direction: column;
     text-align: center;
 }
-.diferencias h1{
-    font-size: 40px;
-    color: rgb(34, 34, 32);
-    letter-spacing: 3px;
-}
-.three-bar{
-    height: 5px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: rgb(1, 110, 89);
-    position: relative;
-}
 .container-diferenciais{
     width: 100%;
     gap: 50px;
@@ -355,18 +348,6 @@ main{
 }
 .produtos:hover .section-logo img{
     opacity: 0.3;
-}
-.produtos h1, .four-bar{
-    letter-spacing: 5px;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
-.four-bar{
-    height:5px;
-    width: 300px;
-    border-radius: 10px;
-    background-color: rgb(170, 203, 99);
-    margin-top: 5px;
 }
 .section-logo{
     display: flex;
@@ -451,10 +432,6 @@ li{
     flex-direction: column;
     padding: 100px 0px 50px 0px;
 }
-.servicos h1{
-    font-size: 40px;
-    color: rgb(34, 34, 32);
-}
 .servicos small{
     color: rgb(126, 217, 86);
     font-size: 25px;
@@ -518,11 +495,6 @@ hr{
     flex-direction: column;
     padding: 100px 0px;
     text-align: center;
-}
-.feedbacks h1{
-    letter-spacing: 2px;
-    color: rgb(34, 34, 32);
-    font-size: 40px;
 }
 .feedback-1, .feedback-2, .feedback-3, .feedback-4, .feedback-5{
     margin-top: 50px;
@@ -605,7 +577,7 @@ hr{
     padding: 100px 0px;
     text-align: center;
     color: white;
-    gap: 50px;
+    gap: 100px;
 }
 .porque:hover .section-logo-pr img{
     opacity: 0.3;
@@ -618,10 +590,6 @@ hr{
 .section-logo-pr img{
     height: 80px;
     transition: all 1s;
-}
-.porque h1{
-    font-size: 40px;
-    margin-bottom: 50px;
 }
 .container-porque{
     gap: 100px;
@@ -657,10 +625,6 @@ hr{
     width: 100%;
     flex-direction: column;
     text-align: center;
-}
-.fale-conosco h1{
-    font-size: 40px;
-    color: rgb(34, 34, 32);
 }
 .fale-conosco p{
     font-size: 25px;
@@ -719,7 +683,7 @@ iframe{
 }
 .formulario h5{
     font-size: 20px;
-    color: rgb(34, 34, 32);
+    color: rgb(1, 110, 89);
 }
 .formulario input, .formulario textarea{
     outline: none;
@@ -761,10 +725,6 @@ textarea{
     flex-direction: column;
     gap: 50px;
     text-align: center;
-}
-.parceiros h1{
-    font-size: 40px;
-    color: white;
 }
 .marquee-secundario{
     background-color: rgba(240, 248, 255, 0.226);
