@@ -3,26 +3,15 @@
         top: 30px;
         right: 30px;
     }
-    .sobre{
-        height: 99%;
-        width: 99%;
-        content: '';
-        background-image: url(../imagens/back-2.jpg);
-        background-position: center;
-        background-size: cover;  
-    }
-    .video{
-        display: none;
-    }
     .container-sobre{
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        padding: 5px 0px;
         height: 100%;
+        gap: 10px;
+        padding: 0px 0px;
+        justify-content: center;
     }
     .logo-sobre h1, .diferencias h1, .produtos h1, .servicos h1, .feedbacks h1, .porque h1, .fale-conosco h1, .parceiros h1{
-        font-size: 25px;
+        font-size: 23px;
+        letter-spacing: 2px;
     }
     .logo-sobre img{
         height: 100px;
@@ -91,15 +80,6 @@
     .produtos{
         padding: 50px 0px 70px 0px;
     }
-    .produtos h1, .four-bar{
-        margin-top: 30px;
-        margin-left: 10px;
-    }
-    .four-bar{
-        margin-top: 5px;
-        margin-left: 10px;
-        width: 319px;
-    }
     .container-produtos{
         margin-top: 70px;
         gap: 30px;
@@ -167,9 +147,6 @@
         width: 350px;
     }
     /*-----------------------------------*/
-    .fale-conosco h1{
-        font-size: 35px;
-    }
     .fale-conosco p{
         font-size: 20px;
     }
@@ -235,23 +212,10 @@
 }
 
 @media screen and (min-width: 480px) and (max-width:689px){
-    .sobre{
-        height: 99%;
-        width: 99%;
-        content: '';
-        background-image: url(../imagens/back-2.jpg);
-        background-position: center;
-        background-size: cover;  
-    }
-    .video{
-        display: none;
-    }
     .container-sobre{
-        height: 90%;
         width: 100%;
-        flex-direction: column;
         gap: 10px;
-        padding: 10px 0px;
+        padding: 30px 0px;
     }
     /*PADRÃO DE TAMANHO DE CADA TITULO DE CADA DIVISÃO*/
     .logo-sobre h1, .diferencias h1, .produtos h1, .servicos h1, .feedbacks h1, .porque h1, .fale-conosco h1, .parceiros h1{
@@ -326,11 +290,6 @@
         margin-top: 30px;
         margin-left: 20px;
     }
-    .four-bar{
-        margin-left: 20px;
-        margin-top: 5px;
-        width: 369px;
-    }
     /*-----------------------------------*/
     .servicos small{
         font-size: 20px;
@@ -383,9 +342,6 @@
         gap: 30px;
     }
     /*-----------------------------------*/
-    .fale-conosco h1{
-        font-size: 35px;
-    }
     .fale-conosco p{
         font-size: 20px;
     }
@@ -441,19 +397,7 @@
 } 
 
 @media screen and (min-width: 690px) and (max-width:849px){
-    .sobre{
-        height: 99%;
-        width: 99%;
-        content: '';
-        background-image: url(../imagens/back-2.jpg);
-        background-position: center;
-        background-size: cover;  
-    }
-    .video{
-        display: none;
-    }
     .container-sobre{
-        flex-direction: column;
         gap: 10px;
         padding: 20px 3px;
     }
@@ -507,14 +451,6 @@
     }
     .container-produtos{
         margin-top: 100px;
-    }
-    .produtos h1, .four-bar{
-        margin-top: 25px;
-        margin-left: 25px;
-    }
-    .four-bar{
-        width: 419px;
-        margin-top: 5px;
     }
     /*-----------------------------------*/
     .container-servicos{
@@ -590,19 +526,8 @@
 } 
 
 @media screen and (min-width: 850px) and (max-width:1149px){
-    .sobre{
-        height: 90%;
-        width: 80%;
-    }
-    .video{
-        height: 90%;
-        width: 80%;
-    }
     .container-sobre{
         gap: 10px;
-    }
-    .logo-sobre h1{
-        font-size: 30px;
     }
     .logo-sobre img{
         height: 200px;
@@ -696,14 +621,6 @@
 } 
 
 @media screen and (min-width:1150px) and (max-width:1400px){
-    .sobre{
-        height: 75%;
-        width: 85%;
-    }
-    .video{
-        height: 75%;
-        width: 85%;
-    }
     .container-sobre{
         padding: 30px 10px;
     }
@@ -722,7 +639,8 @@
     }
     .frases h1{
         top: 370px;
-    }.suporte{
+    }
+    .suporte{
         top: 530px;
     }
     /*-----------------------------------*/
@@ -743,7 +661,7 @@
         height: 80%;
     }
     .video{
-        height: 80%;
+        height: 100%;
     }
     /*PADRÃO DE TAMANHO DE CADA DIVISÃO*/
     .logo-sobre h1, .diferencias h1, .produtos h1, .servicos h1, .feedbacks h1, .porque h1, .fale-conosco h1, .parceiros h1{
@@ -754,10 +672,6 @@
         gap: 50px;
         margin: 0px 20px;
         backdrop-filter: blur(10px);
-    }
-    .two-bar{
-        width: 300px;
-        height:10px;
     }
     .logo-sobre img{
         height: 450px;
@@ -845,9 +759,6 @@
         height: 100%;
         width: 100%;
     }
-    .three-bar{
-        width: 400px;
-    }
     .container-diferenciais{
         gap: 100px;
         margin-top: 100px;
@@ -861,10 +772,6 @@
         bottom: 90px;
     }
     /*-----------------------------------*/
-    .four-bar{
-        height: 10px;
-        width: 668px;
-    }
     .container-produtos{
         gap: 50px;
         height: 650px;
@@ -1085,5 +992,17 @@
     }
     .suporte::before{
         width: 60px;
+    }
+    .sobre{
+        content: '';
+        background-image: url(../imagens/back-2.jpg);
+        background-position: center;
+        background-size: cover;  
+    }
+    .video{
+        display: none;
+    }
+    .container-sobre{
+        flex-direction: column;
     }
 }
