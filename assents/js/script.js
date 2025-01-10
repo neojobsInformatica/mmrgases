@@ -1,4 +1,4 @@
-V/*---ANIMAÇÕES INICIAIS---*/
+/*---ANIMAÇÕES INICIAIS---*/
 let marquee = document.querySelector('.empresa')
 let menu = document.querySelector('.menu')
 let logo = document.querySelector('.logo')
