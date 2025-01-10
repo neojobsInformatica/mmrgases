@@ -1,4 +1,4 @@
-/*---ANIMAÇÕES INICIAIS---*/
+V/*---ANIMAÇÕES INICIAIS---*/
 let marquee = document.querySelector('.empresa')
 let menu = document.querySelector('.menu')
 let logo = document.querySelector('.logo')
@@ -43,6 +43,7 @@ let abrirSobreOne = document.querySelector('#abrir-sobre-one')
 let abrirSobreTwo = document.querySelector('#abrir-sobre-two')
 let containerSobre = document.querySelector('#sobre-nos')
 let fecharSobre = document.querySelector('#fechar-sobre')
+let container = document.querySelector('.container-sobre')
 
 abrirSobreOne.addEventListener('click', AbrirModal)
 abrirSobreTwo.addEventListener('click', AbrirModal)
@@ -51,6 +52,12 @@ function AbrirModal(){
     containerSobre.style.zIndex = '+2'
     containerSobre.style.opacity = '1'
     containerSobre.style.transition = 'all 1s ease-in-out'
+
+    /*ANIMAÇÃO SOBRE*/
+    setTimeout(() => {
+        container.style.transition = 'all 1s ease-in-out'
+        container.style.opacity = '1'  
+    }, 3500);
 }
 
 fecharSobre.addEventListener('click', FecharModal)
@@ -58,8 +65,10 @@ function FecharModal(){
     containerSobre.style.zIndex = '-1'
     containerSobre.style.opacity = '-1'
     containerSobre.style.transition = 'all 1s ease-in-out'
+    container.style.opacity = '0' 
 }
 /*-------------------------------------------------------*/
+
 /*ABERTURA E FECHADURA DO MENU PARA DISPOSITIVOS MENORES*/
 function openModal(){
     const modal = document.querySelector('.menu-tel');
