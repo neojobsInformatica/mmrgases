@@ -10,9 +10,11 @@
         font-size: 23px;
         letter-spacing: 2px;
     }
-    .logo-sobre img{
-        height: 100px;
-        margin: 10px 0px 20px 0px;
+    .container-sobre{
+        opacity: 1;
+    }
+    .logo-sobre h2{
+        font-size:20px;
     }
     .texto-sobre{
         width: 100%;
@@ -218,10 +220,6 @@
     .logo-sobre h1, .diferencias h1, .produtos h1, .servicos h1, .feedbacks h1, .porque h1, .fale-conosco h1, .parceiros h1{
         font-size: 30px;
     }
-    .logo-sobre img{
-        height:130px;
-        margin: 10px 0px 15px 0px;
-    }
     .texto-sobre{
         width: 95%;
         font-size: 18px;
@@ -402,15 +400,11 @@
     .logo-sobre h1, .diferencias h1, .produtos h1, .servicos h1, .feedbacks h1, .porque h1, .fale-conosco h1, .parceiros h1{
         font-size: 35px;
     }
-    .logo-sobre img{
-        height: 150px;
-        margin: 20px 0px 25px 0px;
-    }
     .texto-sobre{
         width: 90%;
-        font-size: 20px;
+        font-size: 25px;
         letter-spacing:1px;
-        line-height: 36px;
+        line-height: 40px;
     }
     /*-----------------------------------*/
     .menu a{
@@ -671,10 +665,6 @@
         margin: 0px 20px;
         backdrop-filter: blur(10px);
     }
-    .logo-sobre img{
-        height: 450px;
-    }
-    
     .texto-sobre{
         font-size: 50px;
         width: 70%;
@@ -968,7 +958,6 @@
         display: none;
     }
 }
-
 @media screen and (max-width:850px){
     .home{
         justify-content: center;
